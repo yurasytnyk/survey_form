@@ -1,0 +1,47 @@
+[type='radio'] {
+  clip: rect(0, 0, 0, 0);
+  cursor: pointer;
+  & + span::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: -5px;
+    width: 6em;
+    height: 1.5em;
+    transform: translate(-50%, -100%);
+    transition: 0.5s ease all;
+  }
+
+  &:checked + span::after {
+    content: '';
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    width: 66px;
+    height: 52px;
+    background-image: url('../../img/check.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateX(-50%);
+  }
+}
+
+input[value='1'] + span::before {
+  background-color: #ce6767;
+}
+
+input[value='2'] + span::before {
+  background-color: #dd8055;
+}
+
+input[value='3'] + span::before {
+  background-color: #d8a054;
+}
+
+input[value='4'] + span::before {
+  background-color: #cee4aa;
+}
+
+input[value='5'] + span::before {
+  background-color: #0ab04d;
+}

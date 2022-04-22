@@ -1,0 +1,20 @@
+@import './global/global.scss';
+
+// Animations
+@import './animations/animations';
+
+// Сomponents
+@import './components/loading';
+@import './components/header';
+@import './components/progressbar';
+@import './components/survey-form';
+@import './components/buttons';
+@import './components/inputs';
+@import './components/contacts_and_message';
+@import './components/quintiles';
+@import './components/tooltip';
+@import './components/overal-result';
+@import './components/scores';
+@import './components/circle';
+@import './components/chart';
+@import './components/chart-axis';

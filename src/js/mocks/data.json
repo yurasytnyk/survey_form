@@ -1,0 +1,62 @@
+[
+  {
+    "id": "identity",
+    "title": "Our leadership encourages people and does not command or control them.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "identity",
+    "title": "Our leadership maintains ongoing awareness of priorities and redirects resources accordingly.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "identity",
+    "title": "Our Family Office maintains awareness of its identity and makes modifications to policies to ensure all functions mirror Family Values.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "admin",
+    "title": "Our Family Office is high-functioning and self-governing. There is an optimal level of involvement from Family members.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "admin",
+    "title": "Our Family Office is evolving by implementing innovative strategies that involve cutting-edge hybrid workforce and digital workplace.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "admin",
+    "title": "Our Family Office is focused on using the most up-to date technology, which enables new solutions and processes to be rapidly deployed.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "invest",
+    "title": "Our Family Office has an investment policy that is reviewed at least annually.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "invest",
+    "title": "We track new investment classes and reallocate capital when we see opportunity. Our planning, budgeting and resource allocation processes are flexible and frequent, and allow us to quickly shift resources.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "invest",
+    "title": "Our Family Office is using an agile investment team design and has structured efficient and effective strategies to reach targeted goals.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "wealth",
+    "title": "Cybersecurity risks, other data privacy risks and fraud risks are monitored in an ongoing way, which enables a timely response to threats.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "wealth",
+    "title": "Our Family Office appeals to, inspires, and sustains talent to ensure our Family Office has the most skilled professionals to build and maintain an agile platform for our Family Office.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  },
+  {
+    "id": "wealth",
+    "title": "Our Family Office Governance Model includes a healthy appetite for, and an appropriate level of exposure to risk and uncertainty; members are creative, motivated, and enthusiastic to accomplish excellence.",
+    "labels": ["Never", "Rarely", "Sometimes", "Often", "Always"]
+  }
+]

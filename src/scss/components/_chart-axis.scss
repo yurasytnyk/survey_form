@@ -1,0 +1,23 @@
+.axis {
+  top: 200px;
+  left: -30px;
+
+  &__item {
+    display: block;
+    width: 30px;
+    text-align: center;
+    color: #666;
+    font-size: 1em;
+    margin: 56px 0;
+    height: 15px;
+    color: #999;
+  }
+
+  &__item:last-child {
+    margin: 53px 0 0 0;
+  }
+
+  &__item:first-child {
+    margin: 0 0 53px 0;
+  }
+}

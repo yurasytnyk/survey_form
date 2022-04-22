@@ -1,0 +1,34 @@
+.overall-result {
+  position: absolute;
+  top: -20px;
+  width: 140px;
+  padding: 30px;
+  margin-bottom: 10px;
+  font-size: 0.65em;
+  text-transform: uppercase;
+
+  &__text {
+    font-size: 3em;
+    display: block;
+
+    &.quintile-1 {
+      color: #03b14c;
+    }
+    
+    &.quintile-2 {
+      color: #95c33d;
+    }
+
+    &.quintile-3 {
+      color: #d7a154;
+    }
+
+    &.quintile-4 {
+      color: #dd7f55;
+    }
+
+    &.quintile-5 {
+      color: #cd6666;
+    }
+  }
+}

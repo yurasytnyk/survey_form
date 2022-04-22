@@ -1,0 +1,39 @@
+.contacts {
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item + &__item {
+    margin-left: 15px;
+  }
+
+  &__label {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 1em;
+    font-weight: normal;
+    float: left;
+  }
+
+  &__input, &__message {
+    width: 100%;
+    padding: 10px;
+    font-family: sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    background-color: #efefef;
+    border: 1px solid;
+    outline: none;
+
+    &::placeholder {
+      color: #333;
+    }
+  }
+
+  &__message {
+    margin-top: 15px;
+    resize: none;
+  }
+}

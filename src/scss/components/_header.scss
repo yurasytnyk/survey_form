@@ -1,0 +1,15 @@
+.header {
+  width: 1000px;
+  margin: 20px auto 40px;
+  border-bottom: 10px solid #ececec;
+
+  &__title {
+    font-size: 3em;
+    color: #666;
+    margin-bottom: 0;
+    font-weight: 100;
+    text-transform: uppercase;
+    text-align: left;
+    padding-left: 10px;
+  }
+}

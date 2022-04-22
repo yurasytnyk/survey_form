@@ -1,0 +1,27 @@
+#survey-form {
+  width: 970px;
+  margin: 0 auto;
+
+  #contacts {
+    height: 650px;
+  }
+
+  #results,
+  #contacts {
+    top: -21px;
+  }
+
+  .section,
+  #results-container {
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    height: 600px;
+    border: 0 none;
+    border-radius: 3px;
+  }
+
+  .section:not(:first-of-type) {
+    display: none;
+  }
+}

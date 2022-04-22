@@ -1,0 +1,47 @@
+.radial-progress {
+  position: absolute;
+  left: 20px;
+  
+  .circle {
+    .mask {
+      clip: rect(0px, 100px, 100px, 50px);
+    }
+
+    .mask, .fill, .shadow {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .mask, .fill {
+      transition: transform 2s;
+    }
+
+    .mask .fill {
+      clip: rect(0px, 50px, 100px, 0px);
+      background-color: transparent;
+      border: solid 10px #c00;
+
+      &.quintile-1 {
+        border-color: #03b14c;
+      }
+    
+      &.quintile-2 {
+        border-color: #95c33d;
+      }
+    
+      &.quintile-3 {
+        border-color: #d7a154;
+      }
+    
+      &.quintile-4 {
+        border-color: #dd7f55;
+      }
+    
+      &.quintile-5 {
+        border-color: #cd6666;
+      }
+    }
+  }
+}

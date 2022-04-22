@@ -1,0 +1,27 @@
+.scores {
+  position: absolute;
+  text-align: left;
+  top: 25px;
+  left: 310px;
+  text-transform: uppercase;
+
+  &__block {
+    height: 30px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 25%;
+      left: -50px;
+      width: 40px;
+      border-bottom: 5px solid #c00;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__block + &__block {
+    &::after {
+      border-bottom: 5px dashed #000;
+    }
+  }
+}

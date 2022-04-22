@@ -1,0 +1,100 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*::before,
+*::after {
+  position: relative;
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+ul,
+ol,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+dd {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+[type='radio'] {
+  position: absolute;
+  left: 50%;
+  width: 1px;
+  transform: translateX(-50%);
+  z-index: 9;
+}
+
+.container {
+  display: none;
+  width: 1100px;
+  height: 900px;
+  text-align: center;
+  transform-origin: left top;
+  overflow: hidden;
+}
+
+.section__title {
+  font-size: 2.5em;
+  font-weight: 100;
+  padding: 10px 0;
+  text-align: left;
+  font-style: italic;
+}
+
+h5 {
+  color: #a3a3a3;
+  font-size: 1.25em;
+  font-weight: 100;
+  text-align: left;
+  line-height: 1.5em;
+  width: 65%;
+  background-color: transparent;
+  text-transform: uppercase;
+}
+
+#identity {
+  opacity: 1;
+}
+
+.form-section {
+  padding: 1em;
+  margin-top: -10px;
+
+  &__marker {
+    position: absolute;
+    top: 10px;
+    opacity: 0;
+    left: 70px;
+  }
+}
+
+/* One radio button per line */
+label {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  font-weight: bold;
+  width: 18%;
+  cursor: pointer;
+}

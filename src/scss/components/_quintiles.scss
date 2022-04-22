@@ -1,0 +1,43 @@
+.quintiles {
+  position: absolute;
+  top: 0;
+  right: 110px;
+  text-transform: uppercase;
+
+  &__quintile {
+    text-align: left;
+    margin: 0 0 6px 0;
+    width: 111px;
+    height: 15px;
+
+    &.quintile-1::after {
+      background-color: #03b14c;
+    }
+
+    &.quintile-2::after {
+      background-color: #95c33d;
+    }
+
+    &.quintile-3::after {
+      background-color: #d7a154;
+    }
+
+    &.quintile-4::after {
+      background-color: #dd7f55;
+    }
+
+    &.quintile-5::after {
+      background-color: #cd6666;
+    }
+  }
+
+  &__quintile::after {
+    content: '';
+    position: absolute;
+    left: -20px;
+    width: 15px;
+    transform: translateY(-50%);
+    top: 50%;
+    height: 15px;
+  }
+}

@@ -1,0 +1,40 @@
+.progressbar {
+  overflow: hidden;
+  counter-reset: step;
+  top: 40px;
+  height: 15px;
+
+  &__step {
+    color: #fff;
+    font-size: 1px;
+    width: 8.33%;
+    float: left;
+  }
+
+  &__step::before {
+    content: counter(step);
+    counter-increment: step;
+    width: 15px;
+    line-height: 15px;
+    display: block;
+    font-size: 1px;
+    font-weight: bold;
+    color: #ececec;
+    background: #ececec;
+    border-radius: 30px;
+    margin: 0 auto 5px;
+    text-align: center;
+  }
+
+  &__step:first-child::after {
+    content: none;
+  }
+
+  &__step.active::before {
+    background: #c00;
+  }
+
+  &__step.active::after {
+    background: #fff;
+  }
+}

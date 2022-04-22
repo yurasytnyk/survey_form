@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=8,9,10,11" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="-1" />
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container fade-in">
+      <!-- Header -->
+      <div class="header">
+        <h1 class="header__title">How agile is your organization?</h1>
+
+        <!-- Progressbar -->
+        <ul class="progressbar">
+          <li class="progressbar__step active">Question 1</li>
+          <li class="progressbar__step">Question 2</li>
+          <li class="progressbar__step">Question 3</li>
+          <li class="progressbar__step">Question 4</li>
+          <li class="progressbar__step">Question 5</li>
+          <li class="progressbar__step">Question 6</li>
+          <li class="progressbar__step">Question 7</li>
+          <li class="progressbar__step">Question 8</li>
+          <li class="progressbar__step">Question 9</li>
+          <li class="progressbar__step">Question 10</li>
+          <li class="progressbar__step">Question 11</li>
+          <li class="progressbar__step">Question 12</li>
+        </ul>
+      </div>
+
+      <!-- Main -->
+      <main id="main" class="form-section">
+        <h5 class="form-section__marker" id="identity">Identity</h5>
+        <h5 class="form-section__marker" id="administration">Administration</h5>
+        <h5 class="form-section__marker" id="investmentManagement">
+          Investment management
+        </h5>
+        <h5 class="form-section__marker" id="wealthPreservation">
+          Wealth preservation
+        </h5>
+        <h5 class="form-section__marker" id="resultsSubhead">Results</h5>
+
+        <form id="survey-form" autocomplete="off">
+          <!-- Contacts -->
+          <fieldset class="section" id="contacts">
+            <div class="contacts__wrap">
+              <div class="contacts__item">
+                <label for="name" class="contacts__label">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Enter your name"
+                  class="contacts__input"
+                />
+              </div>
+  
+              <div class="contacts__item">
+                <label for="email" class="contacts__label">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="contacts__input"
+                />
+              </div>
+  
+              <div class="contacts__item">
+                <label for="phone" class="contacts__label">Phone</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  placeholder="Enter your phone"
+                  class="contacts__input"
+                />
+              </div>
+            </div>
+
+            <div class="contacts__item">
+              <textarea
+                name="message"
+                id="textarea-message"
+                class="contacts__message"
+                rows="10"
+                placeholder="Please describe any areas within your Family Office you might have particular concerns about"
+              ></textarea>
+            </div>
+
+            <input
+              type="button"
+              name="previous"
+              class="previous button"
+              value="Back"
+            />
+
+            <input 
+              type="button" 
+              class="button next" 
+              value="Show results"
+              id="showResults"
+            />
+          </fieldset>
+          <!-- Results -->
+          <fieldset class="section" id="results">
+            <div>
+              <!-- Circle -->
+              <p class="overall-result">
+                <span class="overall-result__text"></span>Average rating
+              </p>
+              <div class="radial-progress">
+                <div class="circle">
+                  <div class="mask full">
+                    <div class="fill"></div>
+                  </div>
+                  <div class="mask half">
+                    <div class="fill"></div>
+                  </div>
+                </div>
+              </div>
+
+              <dl class="chart">
+                <!-- Identity bar -->
+                <dt class="label identity">
+                  Identity
+                  <a class="moreinfo" href="#"
+                    >?
+                    <span class="tooltip">Identity</span>
+                  </a>
+                </dt>
+                <dd class="bar identity" id="identityScore">
+                  <span class="scoreNumber"></span>
+                </dd>
+                <dd
+                  class="marker averageScore identity"
+                  id="identityAvgScore"
+                ></dd>
+                <dd class="marker topScore identity" id="identityTopScore"></dd>
+
+                <!-- Administration bar -->
+                <dt class="label admin">
+                  Administration
+                  <a class="moreinfo" href="#"
+                    >?
+                    <span class="tooltip">Administration</span>
+                  </a>
+                </dt>
+                <dd class="bar admin" id="adminScore">
+                  <span class="scoreNumber"></span>
+                </dd>
+                <dd class="marker averageScore admin" id="adminAvgScore"></dd>
+                <dd class="marker topScore admin" id="adminTopScore"></dd>
+
+                <!-- Investment management bar -->
+                <dt class="label investment">
+                  Investment Management
+                  <a class="moreinfo" href="#"
+                    >?
+                    <span class="tooltip">Investment Management</span>
+                  </a>
+                </dt>
+                <dd class="bar investment" id="investmentScore">
+                  <span class="scoreNumber"></span>
+                </dd>
+                <dd
+                  class="marker averageScore investment"
+                  id="investmentAvgScore"
+                ></dd>
+                <dd
+                  class="marker topScore investment"
+                  id="investmentTopScore"
+                ></dd>
+
+                <!-- Wealth preservation bar -->
+                <dt class="label wealth">
+                  Wealth Preservation
+                  <a class="moreinfo" href="#"
+                    >?
+                    <span class="tooltip">Wealth Preservation</span>
+                  </a>
+                </dt>
+                <dd class="bar wealth" id="wealthScore">
+                  <span class="scoreNumber"></span>
+                </dd>
+                <dd class="marker averageScore wealth" id="wealthAvgScore"></dd>
+                <dd class="marker topScore wealth" id="wealthTopScore"></dd>
+              </dl>
+
+              <!-- Axis -->
+              <ul class="axis">
+                <li class="axis__item">5</li>
+                <li class="axis__item">4</li>
+                <li class="axis__item">3</li>
+                <li class="axis__item">2</li>
+                <li class="axis__item">1</li>
+                <li class="axis__item">0</li>
+              </ul>
+
+              <!-- Legend block -->
+              <ul class="scores">
+                <li class="scores__block">Top performers</li>
+                <li class="scores__block">Average performers</li>
+              </ul>
+
+              <ul class="quintiles">
+                <li class="quintiles__quintile quintile-1">Top Quintile</li>
+                <li class="quintiles__quintile quintile-2"></li>
+                <li class="quintiles__quintile quintile-3">Middle</li>
+                <li class="quintiles__quintile quintile-4"></li>
+                <li class="quintiles__quintile quintile-5">Bottom</li>
+              </ul>
+              <!-- Legend block -->
+            </div>
+
+            <input
+              type="button"
+              name="previous"
+              class="previous button"
+              value="Back"
+              id="resultsBackButton"
+            />
+            <input
+              type="button"
+              name="reset"
+              class="button next"
+              value="Start over"
+              id="resetButton"
+            />
+          </fieldset>
+        </form>
+      </main>
+    </div>
+
+    <div id="loading">Loading...</div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  </body>
+</html>

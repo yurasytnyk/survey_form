@@ -1,0 +1,165 @@
+.chart {
+  position: absolute;
+  top: 200px;
+  left: 0;
+  width: 700px;
+  height: 350px;
+  border-bottom: solid 5px #efefef;
+
+  .bar {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+    height: 0;
+    transition-duration: 2s;
+  }
+
+  .label {
+    position: absolute;
+    bottom: -60px;
+    width: 100px;
+    height: 50px;
+    transform-origin: center bottom;
+    font-size: 1.15em;
+  }
+
+  .scoreNumber {
+    font-weight: bold;
+    font-size: 1.5em;
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    display: block;
+    left: 0;
+    color: #fff;
+  }
+
+  .identity {
+    left: 40px;
+  }
+
+  .admin {
+    left: 215px;
+  }
+
+  .investment {
+    left: 390px;
+  }
+
+  .wealth {
+    left: 565px;
+  }
+
+  .results {
+    left: 570px;
+  }
+
+  .marker {    
+    width: 100px;
+    position: absolute;
+  }
+
+  .averageScore {
+    border-bottom: 5px dashed #000;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 5px #000;
+      left: -10px;
+      position: absolute;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 5px #000;
+      right: -10px;
+      position: absolute;
+    }
+  }
+
+  .topScore {
+    border-bottom: 5px solid #c00;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 10px #c00;
+      left: -10px;
+      position: absolute;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      height: 5px;
+      border-left: solid 10px #c00;
+      right: -10px;
+      position: absolute;
+    }
+  }
+
+  #identityAvgScore {
+    bottom: 243.6px;
+  }
+
+  #identityTopScore {
+    bottom: 294px;
+  }
+
+  #adminAvgScore {
+    bottom: 244.3px;
+  }
+
+  #adminTopScore {
+    bottom: 278px;
+  }
+
+  #investmentAvgScore {
+    bottom: 232.4px;
+  }
+
+  #investmentTopScore {
+    bottom: 280px;
+  }
+
+  #wealthAvgScore {
+    bottom: 220px;
+  }
+
+  #wealthTopScore {
+    bottom: 261px;
+  }
+
+  #resultsAvgScore {
+    bottom: 265px;
+  }
+
+  #resultsTopScore {
+    bottom: 277px;
+  }
+
+  .quintile-1 {
+    background-color: #03b14c;
+  }
+
+  .quintile-2 {
+    background-color: #95c33d;
+  }
+
+  .quintile-3 {
+    background-color: #d7a154;
+  }
+
+  .quintile-4 {
+    background-color: #dd7f55;
+  }
+
+  .quintile-5 {
+    background-color: #cd6666;
+  }
+}
